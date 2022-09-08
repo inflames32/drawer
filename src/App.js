@@ -5,6 +5,7 @@ import ColorsPicker from "./components/ColorsPicker";
 
 export default function App() {
   const [casesNumber, setCasesNumber] = useState("5");
+  const [color, setColor] = useState("");
   const totalCases = casesNumber * casesNumber;
   return (
     <div className="App">
@@ -12,8 +13,8 @@ export default function App() {
         <span>Nombre de cases :{totalCases} </span>
       </div>
 
-      <ColorsPicker />
-      <Drawer casesNumber={casesNumber} totalCases={totalCases} />
+      <ColorsPicker color={color} setColor={setColor} />
+      <Drawer casesNumber={casesNumber} totalCases={totalCases} color={color} />
     </div>
   );
 }

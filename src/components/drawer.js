@@ -1,42 +1,42 @@
 import "./drawer.css";
 
-const Drawer = ({ casesNumber, totalCases }) => {
+const Drawer = ({ casesNumber, totalCases, color }) => {
   const setColor = () => {
     console.log("color");
+  };
+  const handleColor = (evt) => {
+    evt.target.style.backgroundColor = color;
+    console.log(color);
   };
 
   return (
     <div className="drawer_container">
-      {}
-      <div className="case" onClick={setColor}>
-        {casesNumber}
-      </div>
-      <div className="case" onClick={setColor}>
-        {totalCases}
-      </div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
-      <div className="case" onClick={setColor}></div>
+      {/* {casesNumber} {totalCases} */}
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
+      <div className="case" onClick={handleColor}></div>
     </div>
   );
 };

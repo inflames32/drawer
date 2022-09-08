@@ -12,3 +12,9 @@
   background-color: white;
   border: solid 1px black;
 }
+
+@media screen and (max-width: 320px) {
+  .drawer_container {
+    width: 90%;
+  }
+}

@@ -28,6 +28,18 @@ const ColorsPicker = ({ color, setColor }) => {
         id="green"
         name="green"
       ></div>
+      <div
+        className="color yellow"
+        onClick={handleColor}
+        id="yellow"
+        name="yellow"
+      ></div>
+      <div
+        className="color white"
+        onClick={handleColor}
+        id="white"
+        name="white"
+      ></div>
     </div>
   );
 };

@@ -25,6 +25,7 @@ export default function App() {
   ]);
   const [background, setBackground] = useState("#fff");
   const [color, setColor] = useState("");
+  const [cellsColored, setCellsColored] = useState([{}]);
 
   const totalCases = gridSize;
 
@@ -82,6 +83,8 @@ export default function App() {
           gridSize={gridSize}
           totalCases={totalCases}
           color={color}
+          cellsColored={cellsColored}
+          setCellsColored={setCellsColored}
           data-aos="zoom-in"
         />
         {/* <button onClick={(saveOnLocaleStorage, saveColorInLocaleStorage)}>

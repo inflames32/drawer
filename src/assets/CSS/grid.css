@@ -3,21 +3,22 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* width: 1280px;
-  height: 1280px; */
-  width: 640px;
-  height: 640px;
+  width: 1280px;
+  height: 1280px;
   cursor: pointer;
   padding-top: 100px;
+  padding-bottom: 50px;
+  cursor: cell;
 }
 
-.case {
-  width: 30px;
-  height: 30px;
+.cell {
+  width: calc(100% / 21);
+  height: calc(100% / 21);
+
   background: white;
-  border: solid 1px rgb(95, 93, 93);
+  border: solid 0.5px rgb(95, 93, 93);
 }
-.case:hover {
+.cell:hover {
   background: rgb(189, 189, 189);
 }
 

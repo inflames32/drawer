@@ -1,14 +1,12 @@
 import "../assets/CSS/grid.css";
 
-const Grid = ({ gridSize, color }) => {
-  const setColor = () => {
-    console.log("color");
-  };
-
+const Grid = ({ gridSize, color, setCellsColored, cellsColored }) => {
   const handleColor = (evt) => {
     evt.target.style.backgroundColor = color;
-    const id = evt.target.id;
-    console.log(color, id);
+    const caseName = evt.target.getAttribute("name");
+    console.log("ici", color, caseName);
+    cellsColored.push({ caseName, color });
+    console.log(cellsColored);
   };
 
   let array = [];
@@ -20,9 +18,9 @@ const Grid = ({ gridSize, color }) => {
     <div className="grid_container">
       {array.map((elem) => (
         <div
-          className="case"
+          className="cell"
           key={elem}
-          name={elem + 1}
+          name={elem}
           onClick={handleColor}
         ></div>
       ))}

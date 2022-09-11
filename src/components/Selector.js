@@ -14,10 +14,18 @@ const Selector = ({ gridSize, setGridSize }) => {
       onChange={handleGridSelection}
       className="grid_selection"
     >
-      <option value="64">8 x 8 </option>
-      <option value="100">10 x 10 </option>
-      <option value="400">20 x 20 </option>
-      <option value="1024">32 x 32 </option>
+      <option className="option" value="64">
+        8 x 8{" "}
+      </option>
+      <option className="option" value="100">
+        10 x 10{" "}
+      </option>
+      <option className="option" value="400" selected>
+        20 x 20
+      </option>
+      <option className="option" value="1024">
+        32 x 32{" "}
+      </option>
     </select>
   );
 };

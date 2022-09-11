@@ -1,0 +1,11 @@
+.dark {
+  background-color: rgb(113, 113, 113);
+}
+.btn_darkmode-on {
+  width: 30px;
+  height: 60px;
+}
+.btn_darkmode-off {
+  width: 30px;
+  height: 60px;
+}

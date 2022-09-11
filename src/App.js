@@ -1,5 +1,3 @@
-import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
-
 import { useState, useEffect } from "react";
 
 import "./assets/CSS/App.css";
@@ -7,6 +5,7 @@ import "./assets/CSS/App.css";
 import Grid from "./components/Grid";
 import ColorsPicker from "./components/ColorsPicker";
 import Selector from "../src/components/Selector";
+import DarkMode from "../src/components/DarkMode";
 
 export default function App() {
   useEffect(() => {
@@ -26,10 +25,6 @@ export default function App() {
   ]);
   const [background, setBackground] = useState("#fff");
   const [color, setColor] = useState("");
-
-  const handleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
   const totalCases = gridSize;
 
@@ -73,20 +68,10 @@ export default function App() {
   };
 
   return (
-    /* selection du dark mode */
     <div className={darkMode ? "App dark" : "App"}>
-      {darkMode ? (
-        <span className="light">
-          <HiLightBulb onClick={handleDarkMode} />
-        </span>
-      ) : (
-        <span className="light">
-          <HiOutlineLightBulb onClick={handleDarkMode} />
-        </span>
-      )}
-
+      <DarkMode handleDarkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="container">
-        <Selector gridSize={gridSize} setGridSize={setGridSize} />
+        {/* <Selector gridSize={gridSize} setGridSize={setGridSize} /> */}
         <ColorsPicker
           color={color}
           setColor={setColor}

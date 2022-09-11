@@ -8,10 +8,9 @@
   width: 640px;
   height: 640px;
   cursor: pointer;
-}
-.grid_container {
   padding-top: 100px;
 }
+
 .case {
   width: 30px;
   height: 30px;

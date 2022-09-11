@@ -9,17 +9,6 @@
   text-align: center;
   min-height: 100%;
 }
-.dark {
-  background-color: rgb(113, 113, 113);
-}
-.btn_darkmode-on {
-  width: 30px;
-  height: 60px;
-}
-.btn_darkmode-off {
-  width: 30px;
-  height: 60px;
-}
 
 .container {
   width: 100%;
@@ -28,12 +17,12 @@
   flex-direction: column;
   align-items: center;
 }
-/* .light {
-  position: absolute;
-  right: 30px;
-  left: 30px;
-} */
-.light > svg {
+.darkmode {
+  position: relative;
+  right: 0px;
+  left: 0px;
+}
+.darkmode > svg {
   width: 60px;
   height: 60px;
 }

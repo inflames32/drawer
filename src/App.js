@@ -70,7 +70,7 @@ export default function App() {
 
   return (
     <div className={darkMode ? "App dark" : "App"}>
-      <DarkMode handleDarkMode={darkMode} setDarkMode={setDarkMode} />
+      <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="container">
         {/* <Selector gridSize={gridSize} setGridSize={setGridSize} /> */}
         <ColorsPicker

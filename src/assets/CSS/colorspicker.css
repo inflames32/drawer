@@ -1,0 +1,62 @@
+.colorspicker_container {
+  max-width: 600px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.color_container {
+  /* margin: 20px 0 20px 0; */
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.color:hover {
+  width: 60px;
+  height: 60px;
+  border: solid 1px black;
+}
+.black:hover {
+  width: 60px;
+  height: 60px;
+  border: solid 1px white;
+}
+
+.blue {
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+}
+.white {
+  background: white;
+}
+.black {
+  background: black;
+}
+
+.selected_color {
+  width: 60px;
+  height: 60px;
+  border: solid 1px black;
+}
+.selected_color > .black {
+  width: 60px;
+  height: 60px;
+  border: solid 1px white;
+}

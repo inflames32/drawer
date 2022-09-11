@@ -1,65 +1,110 @@
-import { useState } from "react";
-import "./App.css";
-import Drawer from "./components/drawer";
+import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
+
+import { useState, useEffect } from "react";
+
+import "./assets/CSS/App.css";
+
+import Grid from "./components/Grid";
 import ColorsPicker from "./components/ColorsPicker";
+import Selector from "../src/components/Selector";
 
 export default function App() {
-  const [casesNumber, setCasesNumber] = useState("5");
+  useEffect(() => {
+    document.title = gridSize;
+  });
+  const [darkMode, setDarkMode] = useState(false);
+  const [gridSize, setGridSize] = useState(400);
+  const [casesColored, setCasesColored] = useState([
+    {
+      id: 1,
+      background: "blue",
+    },
+    {
+      id: 1,
+      background: "green",
+    },
+  ]);
+  const [background, setBackground] = useState("#fff");
   const [color, setColor] = useState("");
-  const handleSelect = (e) => {
-    console(e.target.value);
+
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
   };
 
-  const totalCases = casesNumber * casesNumber;
-  return (
-    <div className="App">
-      <div className="container">
-        {/*  <span>
-          Nombre de cases par ligne :
-          <select name="cases" id="cases">
-            <option onChange={handleSelect} value="5" selected>
-              5
-            </option>
-            <option onChange={handleSelect} value="6">
-              6
-            </option>
-            <option onChange={handleSelect} value="7">
-              7
-            </option>
-            <option onChange={handleSelect} value="8">
-              8
-            </option>
-            <option onChange={handleSelect} value="9">
-              9
-            </option>
-            <option onChange={handleSelect} value="10">
-              10
-            </option>
-            <option onChange={handleSelect} value="11">
-              11
-            </option>
-            <option onChange={handleSelect} value="12">
-              12
-            </option>
-            <option onChange={handleSelect} value="13">
-              13
-            </option>
-            <option onChange={handleSelect} value="14">
-              14
-            </option>
-            <option onChange={handleSelect} value="15">
-              15
-            </option>
-            <option onChange={handleSelect} value="16">
-              16
-            </option>
-          </select>
-          {totalCases}
-        </span> */}
-      </div>
+  const totalCases = gridSize;
 
-      <ColorsPicker color={color} setColor={setColor} />
-      <Drawer casesNumber={casesNumber} totalCases={totalCases} color={color} />
+  const saveOnLocaleStorage = () => {
+    const savedInformations = localStorage.setItem("darMode", true);
+    console.log(savedInformations);
+  };
+  const saveColorInLocaleStorage = () => {
+    const colorInLocaleStorage = localStorage.setItem(
+      "casesColored",
+      JSON.stringify(
+        { id: 1, background: { background } },
+        { id: 2, background: { background } },
+        { id: 3, background: { background } },
+        { id: 4, background: { background } },
+        { id: 5, background: { background } },
+        { id: 6, background: { background } },
+        { id: 7, background: { background } },
+        { id: 8, background: { background } },
+        { id: 9, background: { background } },
+        { id: 10, background: { background } },
+        { id: 11, background: { background } },
+        { id: 12, background: { background } },
+        { id: 13, background: { background } },
+        { id: 14, background: { background } }
+      )
+    );
+    console.log(colorInLocaleStorage);
+    console.log(localStorage);
+  };
+  const loadLocaleStorage = () => {
+    const loadInformations = localStorage.getItem();
+    console.log(loadInformations);
+  };
+  const clearLocaleStorage = () => {
+    localStorage.clear();
+    console.log(localStorage);
+    if (localStorage.length === 0) {
+      console.log("LocaleStorage vide :)");
+    }
+  };
+
+  return (
+    /* selection du dark mode */
+    <div className={darkMode ? "App dark" : "App"}>
+      {darkMode ? (
+        <span className="light">
+          <HiLightBulb onClick={handleDarkMode} />
+        </span>
+      ) : (
+        <span className="light">
+          <HiOutlineLightBulb onClick={handleDarkMode} />
+        </span>
+      )}
+
+      <div className="container">
+        <Selector gridSize={gridSize} setGridSize={setGridSize} />
+        <ColorsPicker
+          color={color}
+          setColor={setColor}
+          background={background}
+          setBackground={setBackground}
+        />
+        <Grid
+          gridSize={gridSize}
+          totalCases={totalCases}
+          color={color}
+          data-aos="zoom-in"
+        />
+        {/* <button onClick={(saveOnLocaleStorage, saveColorInLocaleStorage)}>
+          Sauvegarde
+        </button>
+        <button onClick={loadLocaleStorage}>Rechargement</button>
+        <button onClick={clearLocaleStorage}>Clear</button> */}
+      </div>
     </div>
   );
 }

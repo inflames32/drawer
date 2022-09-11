@@ -1,0 +1,29 @@
+.grid_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* width: 1280px;
+  height: 1280px; */
+  width: 640px;
+  height: 640px;
+  cursor: pointer;
+}
+.grid_container {
+  padding-top: 100px;
+}
+.case {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: solid 1px rgb(95, 93, 93);
+}
+.case:hover {
+  background: rgb(189, 189, 189);
+}
+
+@media screen and (max-width: 320px) {
+  .grid_container {
+    width: 90%;
+  }
+}

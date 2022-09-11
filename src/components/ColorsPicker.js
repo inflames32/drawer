@@ -1,45 +1,73 @@
-import "./colorspicker.css";
-const ColorsPicker = ({ color, setColor }) => {
+import { useState, useEffect } from "react";
+import "../assets/CSS/colorspicker.css";
+import "aos/dist/aos.css";
+const ColorsPicker = ({
+  color,
+  setColor,
+  setDisplayColorPicker,
+  displayColorPicker,
+  background,
+  setBackground,
+  ColorChooseWithPicker,
+  setColorChooseWithPicker,
+  selectedColor,
+}) => {
   const handleColor = (evt) => {
-    const colorToProps = evt.target.id;
-    console.log(colorToProps);
-    setColor(colorToProps);
+    const selectedColor = evt.target.id;
+    console.log(selectedColor);
+    setColor(selectedColor);
   };
 
   return (
     <div className="colorspicker_container">
-      <div
-        className="color blue"
-        onClick={handleColor}
-        id="blue"
-        name="blue"
-      ></div>
-
-      <div
-        className="color red"
-        onClick={handleColor}
-        id="red"
-        name="red"
-      ></div>
-
-      <div
-        className="color green"
-        onClick={handleColor}
-        id="green"
-        name="green"
-      ></div>
-      <div
-        className="color yellow"
-        onClick={handleColor}
-        id="yellow"
-        name="yellow"
-      ></div>
-      <div
-        className="color white"
-        onClick={handleColor}
-        id="white"
-        name="white"
-      ></div>
+      <span className="color_container">
+        <div
+          className={selectedColor ? "color blue selected_color" : "color blue"}
+          onClick={handleColor}
+          id="blue"
+          name="blue"
+        ></div>
+      </span>
+      <span className="color_container">
+        <div
+          className="color red"
+          onClick={handleColor}
+          id="red"
+          name="red"
+        ></div>
+      </span>
+      <span className="color_container">
+        <div
+          className="color green"
+          onClick={handleColor}
+          id="green"
+          name="green"
+        ></div>
+      </span>
+      <span className="color_container">
+        <div
+          className="color yellow"
+          onClick={handleColor}
+          id="yellow"
+          name="yellow"
+        ></div>
+      </span>
+      <span className="color_container">
+        <div
+          className="color black"
+          onClick={handleColor}
+          id="black"
+          name="black"
+        ></div>
+      </span>
+      <span className="color_container">
+        <div
+          className="color white"
+          onClick={handleColor}
+          id="white"
+          name="white"
+        ></div>
+      </span>
     </div>
   );
 };

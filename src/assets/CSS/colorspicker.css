@@ -1,9 +1,12 @@
 .colorspicker_container {
-  max-width: 600px;
+  width: 600px;
+  max-width: 95%;
+  padding: 20px;
   height: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   z-index: 2;
   cursor: pointer;
 }
@@ -60,8 +63,8 @@
   height: 60px;
   border: solid 1px black;
 }
-.selected_color > .black {
+/* .selected_color > .black {
   width: 60px;
   height: 60px;
   border: solid 1px white;
-}
+} */

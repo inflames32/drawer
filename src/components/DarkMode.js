@@ -3,7 +3,6 @@ import "../assets/CSS/darkMode.css";
 
 const DarkMode = ({ setDarkMode, darkMode }) => {
   const handleDarkMode = () => {
-    console.log("clic");
     setDarkMode(!darkMode);
   };
   return (

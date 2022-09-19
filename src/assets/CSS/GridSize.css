@@ -1,0 +1,17 @@
+.grid_size_container {
+  display: flex;
+  width: 220px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.grid_size_input {
+  display: flex;
+  width: 50px;
+  justify-content: space-around;
+  text-align: center;
+}
+.x {
+  display: flex;
+  width: 50px;
+  justify-content: space-around;
+}

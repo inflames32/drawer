@@ -1,0 +1,12 @@
+@media screen and(max-width: 420px) {
+  .header {
+    height: 60px;
+    background-color: bisque;
+  }
+}
+@media screen and(max-width: 1080px) {
+  .header {
+    height: 120px;
+    background-color: rgb(68, 40, 5);
+  }
+}

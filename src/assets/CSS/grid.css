@@ -12,13 +12,13 @@
   width: auto;
   height: auto;
 }
-.row {
+.grid_row {
   display: flex;
   width: auto;
   height: 50px;
 }
 
-.col {
+.grid_pixel {
   width: 50px;
   height: 50px;
   background: #ffffff;
@@ -31,14 +31,5 @@
 @media screen and (max-width: 320px) {
   .grid_container {
     width: 90%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .grid_container {
-    margin-top: 50px;
-  }
-  .grid {
-    max-width: 95%;
-    max-height: 95%;
   }
 }

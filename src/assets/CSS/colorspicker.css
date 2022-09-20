@@ -1,5 +1,5 @@
 .colorspicker_container {
-  width: 600px;
+  width: 660px;
   max-width: 95%;
   padding: 20px;
   height: 60px;
@@ -62,6 +62,15 @@
   width: 60px;
   height: 60px;
   border: solid 1px black;
+}
+.test {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
+    rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px,
+    rgb(0 0 0 / 9%) 0px -3px 5px;
 }
 /* .selected_color > .black {
   width: 60px;

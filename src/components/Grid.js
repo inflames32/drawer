@@ -13,7 +13,6 @@ const Grid = ({
   const handleColor = (evt) => {
     evt.target.style.background = selectedColor;
     const name = evt.target.getAttribute("name");
-    console.log("clic");
     setColor(selectedColor);
     cellsColored.push({ name, color });
   };
@@ -32,12 +31,12 @@ const Grid = ({
     <div className="grid_container">
       <div className="grid">
         {numberOfRows.map((row) => (
-          <div className="row" key={row} name={row}>
-            {numberOfCols.map((col) => (
+          <div className="grid_row" key={row} name={row}>
+            {numberOfCols.map((pixel) => (
               <div
-                className="col"
-                key={col}
-                name={col}
+                className="grid_pixel"
+                key={pixel}
+                name={pixel}
                 onClick={handleColor}
               ></div>
             ))}

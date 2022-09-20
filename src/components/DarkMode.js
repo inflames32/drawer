@@ -9,10 +9,12 @@ const DarkMode = ({ setDarkMode, darkMode }) => {
     <div className="darkMode_container">
       {darkMode ? (
         <span className="darkmode">
+          {/*  <span className="darkmode_tooltiptext">Click Me!</span> */}
           <HiOutlineLightBulb onClick={handleDarkMode} />
         </span>
       ) : (
         <span className="darkmode">
+          {/*  <span className="darkmode_tooltiptext">Click Me!</span> */}
           <HiLightBulb onClick={handleDarkMode} />
         </span>
       )}

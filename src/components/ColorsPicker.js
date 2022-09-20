@@ -1,5 +1,4 @@
 import "../assets/CSS/colorspicker.css";
-import { v4 as uuidv4 } from "uuid";
 
 const ColorsPicker = ({ selectedColor, setSelectedColor }) => {
   // selectionner la couleur

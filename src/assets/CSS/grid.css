@@ -33,3 +33,12 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 450px) {
+  .grid_container {
+    margin-top: 50px;
+  }
+  .grid {
+    max-width: 95%;
+    max-height: 95%;
+  }
+}

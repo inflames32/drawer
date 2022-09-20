@@ -1,13 +1,21 @@
 import { v4 as uuidv4 } from "uuid";
 import "../assets/CSS/grid.css";
-const Grid = ({ color, cellsColored, width, height }) => {
-  console.log(color);
+const Grid = ({
+  color,
+  setColor,
+  cellsColored,
+  setWidth,
+  width,
+  height,
+  setHeight,
+  selectedColor,
+}) => {
   const handleColor = (evt) => {
-    evt.target.style.background = color;
-
-    const attrName = evt.target.getAttribute("name");
-    /* const color = evt.target.background; */
-    cellsColored.push({ attrName, color });
+    evt.target.style.background = selectedColor;
+    const name = evt.target.getAttribute("name");
+    console.log("clic");
+    setColor(selectedColor);
+    cellsColored.push({ name, color });
   };
 
   // nombre de lignes
@@ -24,12 +32,12 @@ const Grid = ({ color, cellsColored, width, height }) => {
     <div className="grid_container">
       <div className="grid">
         {numberOfRows.map((row) => (
-          <div className="row" key={uuidv4()} name={uuidv4()}>
-            {numberOfCols.map(() => (
+          <div className="row" key={row} name={row}>
+            {numberOfCols.map((col) => (
               <div
                 className="col"
-                key={uuidv4()}
-                name={uuidv4()}
+                key={col}
+                name={col}
                 onClick={handleColor}
               ></div>
             ))}

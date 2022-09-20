@@ -6,7 +6,7 @@ const DarkMode = ({ setDarkMode, darkMode }) => {
     setDarkMode(!darkMode);
   };
   return (
-    <div>
+    <div className="darkMode_container">
       {darkMode ? (
         <span className="darkmode">
           <HiOutlineLightBulb onClick={handleDarkMode} />

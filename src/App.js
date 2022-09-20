@@ -10,7 +10,7 @@ import GridSize from "./components/GridSize";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [color, setColor] = useState("yellow");
+  const [color, setColor] = useState();
   const [width, setWidth] = useState(5);
   const [height, setHeight] = useState(5);
   const [background, setBackground] = useState("#fff");
@@ -24,7 +24,6 @@ const App = () => {
     "black",
     "white",
   ]);
-  console.log(color);
   return (
     <div className={darkMode ? "App dark" : "App"}>
       <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />

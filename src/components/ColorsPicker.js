@@ -1,22 +1,12 @@
 import "../assets/CSS/colorspicker.css";
-import "aos/dist/aos.css";
-const ColorsPicker = ({
-  selectedColor,
-  setSelectedColor,
-  setDisplayColorPicker,
-  displayColorPicker,
-  background,
-  setBackground,
-  ColorChooseWithPicker,
-  setColorChooseWithPicker,
-  arrayOfColors,
-  setArrayOfColors,
-}) => {
+import { v4 as uuidv4 } from "uuid";
+
+const ColorsPicker = ({ selectedColor, setSelectedColor }) => {
   // selectionner la couleur
   const handleColor = (evt) => {
-    const selectedColor = evt.target.id;
-
+    const selectedColor = evt.target.getAttribute("name");
     setSelectedColor(selectedColor);
+    console.log(selectedColor);
   };
 
   return (

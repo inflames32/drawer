@@ -21,8 +21,8 @@
 .col {
   width: 50px;
   height: 50px;
-  background: white;
-  border: solid 0.2px rgb(95, 93, 93);
+  background: #ffffff;
+  border: solid 0.2px rgb(98, 96, 96);
 }
 .col:hover {
   background: rgb(189, 189, 189);

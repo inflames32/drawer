@@ -1,6 +1,6 @@
 .grid_size_container {
   display: flex;
-  width: 220px;
+  width: 500px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -9,9 +9,34 @@
   width: 50px;
   justify-content: space-around;
   text-align: center;
+  font-family: "Calibri";
+  font-size: 24px;
+  align-items: center;
 }
 .x {
   display: flex;
   width: 50px;
   justify-content: space-around;
+  align-items: center;
+}
+.grid_size_width {
+  display: flex;
+}
+.grid_size_height {
+  display: flex;
+}
+.grid_size_label {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+
+.grid_size_btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
 }

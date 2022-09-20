@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import "./assets/CSS/App.css";
 
@@ -10,8 +10,7 @@ import GridSize from "./components/GridSize";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [color, setColor] = useState("");
-
+  const [color, setColor] = useState("yellow");
   const [width, setWidth] = useState(5);
   const [height, setHeight] = useState(5);
   const [background, setBackground] = useState("#fff");
@@ -25,7 +24,7 @@ const App = () => {
     "black",
     "white",
   ]);
-
+  console.log(color);
   return (
     <div className={darkMode ? "App dark" : "App"}>
       <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />

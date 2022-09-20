@@ -1,18 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
 import "../assets/CSS/grid.css";
-const Grid = ({
-  color,
-  setColor,
-  cellsColored,
-  setWidth,
-  width,
-  height,
-  setHeight,
-}) => {
+const Grid = ({ color, cellsColored, width, height }) => {
+  console.log(color);
   const handleColor = (evt) => {
-    const setColorOnClick = evt.target.style.background;
+    evt.target.style.background = color;
 
     const attrName = evt.target.getAttribute("name");
+    /* const color = evt.target.background; */
     cellsColored.push({ attrName, color });
   };
 
@@ -31,7 +25,7 @@ const Grid = ({
       <div className="grid">
         {numberOfRows.map((row) => (
           <div className="row" key={uuidv4()} name={uuidv4()}>
-            {numberOfCols.map((col) => (
+            {numberOfCols.map(() => (
               <div
                 className="col"
                 key={uuidv4()}

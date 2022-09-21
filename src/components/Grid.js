@@ -30,11 +30,12 @@ const Grid = ({
   return (
     <div className="grid_container">
       <div className="grid">
-        {numberOfRows.map((row) => (
+        {numberOfRows.map((row, idRow) => (
           <div className="grid_row" key={row} name={row}>
-            {numberOfCols.map((pixel) => (
+            {numberOfCols.map((pixel, idCol) => (
               <div
                 className="grid_pixel"
+                id={idRow.toString() + "-" + idCol.toString()}
                 key={pixel}
                 name={pixel}
                 onClick={handleColor}

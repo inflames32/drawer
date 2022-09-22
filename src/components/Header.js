@@ -1,28 +1,26 @@
-import Saving from "../components/Saving";
-import "./Header.css";
+import Auth from "../components/Auth";
 
-const Header = () => {
+import "../assets/CSS/header.css";
+
+const Header = ({
+  email,
+  password,
+  setEmail,
+  setPassword,
+  passwordIsShow,
+  setPasswordIsShow,
+}) => {
   return (
     <div className="header">
       <h1 className="header_title">Pixel Art Grid React App </h1>
-      <Saving />
-
-      {/*   <a
-        class="github-button"
-        href="https://github.com/inflames32/drawer"
-        data-icon="octicon-star"
-        aria-label="Star inflames32/drawer on GitHub"
-      >
-        Star
-      </a>
-
-      <a
-        class="github-button"
-        href="https://github.com/inflames32"
-        aria-label="Follow @inflames32 on GitHub"
-      >
-        Follow @inflames32
-      </a> */}
+      {/*    <Auth
+        email={email}
+        password={password}
+        setEmail={setEmail}
+        setPassword={setPassword}
+        passwordIsShow={passwordIsShow}
+        setPasswordIsShow={setPasswordIsShow}
+      /> */}
     </div>
   );
 };

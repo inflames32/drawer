@@ -3,18 +3,21 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: auto;
   height: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
   cursor: cell;
 }
 .grid {
-  width: auto;
-  height: auto;
+  height: 95%;
+  width: 95%;
+  max-height: 1000px;
 }
 .grid_row {
   display: flex;
   width: auto;
+
   height: 50px;
 }
 
@@ -27,9 +30,9 @@
 .col:hover {
   background: rgb(189, 189, 189);
 }
-
+/* 
 @media screen and (max-width: 320px) {
   .grid_container {
     width: 90%;
   }
-}
+} */

@@ -1,10 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+/* @import "~@csstools/normalize.css"; */
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+ */
+/* @media screen and (max-width: 320px) {
+  .App {
+    width: 100vw;
+    min-height: 100vh;
+  }
+} */
+
 .App {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  min-width: 320px;
+  width: 100vw;
   min-height: 100vh;
+
   font-family: "Space Grotesk", sans-serif;
   background-color: rgb(144, 171, 212);
   display: flex;
@@ -20,6 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .darkmode {
   position: relative;
@@ -29,11 +41,4 @@
 .darkmode > svg {
   width: 60px;
   height: 60px;
-}
-
-@media screen and (max-width: 320px) {
-  .App {
-    width: 100%;
-    min-height: 100vh;
-  }
 }

@@ -27,23 +27,6 @@ const GridSize = ({ setWidth, width, height, setHeight }) => {
     <div className="grid_size_container">
       <div className="grid_size_width">
         <span className="grid_size_label">Width</span>
-        <button className="grid_size_btn" onClick={decrementWidth}>
-          <HiOutlineMinus />
-        </button>
-        <span className="grid_size_input" min={1}>
-          {width}
-        </span>
-        <button className="grid_size_btn" onClick={incrementWidth}>
-          <HiOutlinePlus />
-        </button>
-      </div>
-
-      <span className="x">
-        <ImCross />
-      </span>
-
-      <div className="grid_size_height">
-        <span className="grid_size_label">Height</span>
         <button className="grid_size_btn" onClick={decrementHeigth}>
           <HiOutlineMinus />
         </button>
@@ -52,6 +35,22 @@ const GridSize = ({ setWidth, width, height, setHeight }) => {
         </span>
 
         <button className="grid_size_btn" onClick={incrementHeigth}>
+          <HiOutlinePlus />
+        </button>
+      </div>
+
+      <span className="x">
+        <ImCross />
+      </span>
+      <div className="grid_size_height">
+        <span className="grid_size_label">Height</span>
+        <button className="grid_size_btn" onClick={decrementWidth}>
+          <HiOutlineMinus />
+        </button>
+        <span className="grid_size_input" min={1}>
+          {width}
+        </span>
+        <button className="grid_size_btn" onClick={incrementWidth}>
           <HiOutlinePlus />
         </button>
       </div>

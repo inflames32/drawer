@@ -3,18 +3,22 @@ import "../assets/CSS/grid.css";
 const Grid = ({
   color,
   setColor,
-  cellsColored,
+  pixelsColored,
   setWidth,
   width,
   height,
   setHeight,
   selectedColor,
+  setPixelsColored,
 }) => {
   const handleColor = (evt) => {
     evt.target.style.background = selectedColor;
-    const name = evt.target.getAttribute("name");
+    const id = evt.target.getAttribute("id");
     setColor(selectedColor);
-    cellsColored.push({ name, color });
+    /*  pixelsColored.push({ id, color }); */
+    console.log(pixelsColored);
+    setPixelsColored([...pixelsColored], { id, selectedColor });
+    console.log(pixelsColored);
   };
 
   // nombre de lignes

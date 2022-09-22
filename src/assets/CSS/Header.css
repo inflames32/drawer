@@ -1,12 +1,21 @@
-@media screen and(max-width: 420px) {
+/* @media screen and(max-width: 450px) {
   .header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
     height: 60px;
     background-color: bisque;
+  }
+  .header_title {
+    font-family: Tahoma;
   }
 }
 @media screen and(max-width: 1080px) {
   .header {
+    width: 100%;
     height: 120px;
     background-color: rgb(68, 40, 5);
   }
 }
+ */

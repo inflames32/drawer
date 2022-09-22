@@ -1,50 +1,50 @@
 [
   {
     "id": 0,
-    "color": "blue"
+    "color": "#4D4D4D"
   },
   {
     "id": 1,
-    "color": "red"
+    "color": "#999999"
   },
   {
     "id": 2,
-    "color": "green"
+    "color": "#FFFFFF"
   },
   {
     "id": 3,
-    "color": "yellow"
+    "color": "#F44E3B"
   },
   {
     "id": 4,
-    "color": "black"
+    "color": "#FCDC00"
   },
   {
     "id": 5,
-    "color": "white"
+    "color": "#DBDF00"
   },
   {
     "id": 6,
-    "color": "pink"
+    "color": "#A4DD00"
   },
   {
     "id": 8,
-    "color": "orange"
+    "color": "#68CCCA"
   },
   {
     "id": 9,
-    "color": "violet"
+    "color": "#73D8FF"
   },
   {
     "id": 10,
-    "color": "magenta"
+    "color": "#AEA1FF"
   },
   {
     "id": 11,
-    "color": "rgb(103, 58, 183)"
+    "color": "#FDA1FF"
   },
   {
     "id": 12,
-    "color": "brown"
+    "color": "#333333"
   }
 ]

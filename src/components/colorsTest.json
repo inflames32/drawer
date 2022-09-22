@@ -1,0 +1,59 @@
+[
+  { "id": 0, "color": "#4D4D4D" },
+  { "id": 1, "color": "#999999" },
+  { "id": 2, "color": "#FFFFFF" },
+  { "id": 3, "color": "#F44E3B" },
+  { "id": 4, "color": "#FE9200" },
+  { "id": 5, "color": "#FCDC00" },
+  { "id": 6, "color": "#DBDF00" },
+  { "id": 7, "color": "#A4DD00" },
+  { "id": 8, "color": "#68CCCA" },
+  { "id": 9, "color": "#73D8FF" },
+  { "id": 10, "color": "#AEA1FF" },
+  { "id": 11, "color": "#FDA1FF" },
+  { "id": 12, "color": "#333333" },
+  { "id": 13, "color": "#808080" },
+  { "id": 14, "color": "#cccccc" },
+
+  { "id": 15, "color": "#D33115" },
+
+  { "id": 16, "color": "#E27300" },
+
+  { "id": 17, "color": "#FCC400" },
+
+  { "id": 18, "color": "#B0BC00" },
+
+  { "id": 19, "color": "#68BC00" },
+
+  { "id": 20, "color": "#16A5A5" },
+
+  { "id": 21, "color": "#009CE0" },
+
+  { "id": 22, "color": "#7B64FF" },
+
+  { "id": 23, "color": "#FA28FF" },
+
+  { "id": 24, "color": "#000000" },
+
+  { "id": 25, "color": "#666666" },
+
+  { "id": 26, "color": "#B3B3B3" },
+
+  { "id": 27, "color": "#9F0500" },
+
+  { "id": 28, "color": "#C45100" },
+
+  { "id": 29, "color": "#FB9E00" },
+
+  { "id": 30, "color": "#808900" },
+
+  { "id": 31, "color": "#194D33" },
+
+  { "id": 32, "color": "#0C797D" },
+
+  { "id": 33, "color": "#0062B1" },
+
+  { "id": 34, "color": "#653294" },
+
+  { "id": 35, "color": "#AB149E" }
+]

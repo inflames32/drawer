@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "../assets/CSS/colorspicker.css";
-import ColorsJson from "../components/colors.json";
+import ColorsJson from "../components/colorsTest.json";
 const ColorsPicker = ({
   selectedColor,
   setSelectedColor,
@@ -14,13 +14,13 @@ const ColorsPicker = ({
   const handleColor = (evt) => {
     const selectedColor = evt.target.getAttribute("name");
     setSelectedColor(selectedColor);
-    console.log(selectedColor);
   };
 
   return (
     <div className="colorspicker_container">
-      {ColorsJson.map((color) => (
+      {ColorsJson.map((color, i) => (
         <div
+          key={i}
           style={{ background: color.color }}
           className={`color ${color.color} ${
             selectedColor === `${color.color}` ? ` selected_color` : ""

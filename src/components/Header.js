@@ -1,6 +1,6 @@
 import Auth from "../components/Auth";
 
-import "../assets/CSS/header.css";
+/* import "../assets/CSS/header.css"; */
 
 const Header = ({
   email,

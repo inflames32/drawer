@@ -2,7 +2,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Auth from "../components/Auth";
 
-import "../assets/CSS/header.css";
+import "../assets/CSS/Header.css";
 
 const Header = ({
   email,

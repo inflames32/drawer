@@ -19,6 +19,7 @@ const Header = ({
 }) => {
   const handleOpenMenu = () => {
     setMenuIsOpen(!menuIsOpen);
+    console.log(menuIsOpen);
   };
 
   return (
@@ -34,11 +35,11 @@ const Header = ({
           </div>
         )}
 
-        {menuIsOpen ? (
-          <div className="header_message">Open</div>
+        {/*  {menuIsOpen ? (
+          <div className="header_message">Pixel Art Grid App</div>
         ) : (
-          <div className="header_message">Close</div>
-        )}
+          <div className="header_message">Pixel Art Grid App</div>
+        )} */}
         <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
       </nav>
 

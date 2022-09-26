@@ -14,6 +14,9 @@
   .grid_size_label {
     font-size: 20px;
   }
+  .grid_size_btn {
+    border: none;
+  }
 }
 @media screen and (min-width: 338px) {
   .grid_size_container {
@@ -32,6 +35,10 @@
   .grid_size_input,
   .grid_size_label {
     font-size: 20px;
+  }
+  .grid_size_btn {
+    border: none;
+    background-color: transparent;
   }
 }
 /* .grid_size_container {

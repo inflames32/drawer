@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className={darkMode ? "App dark" : "App"}>
-      {/*   <Header
+      <Header
         email={email}
         password={password}
         setEmail={setEmail}
@@ -33,7 +33,9 @@ const App = () => {
         setPasswordIsShow={setPasswordIsShow}
         setMenuIsOpen={setMenuIsOpen}
         menuIsOpen={menuIsOpen}
-      /> */}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
 
       <GridSize
         width={width}

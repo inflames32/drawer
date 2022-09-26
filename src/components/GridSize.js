@@ -3,14 +3,7 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import DarkMode from "./DarkMode";
 import "../assets/CSS/GridSize.css";
-const GridSize = ({
-  setWidth,
-  width,
-  height,
-  setHeight,
-  darkMode,
-  setDarkMode,
-}) => {
+const GridSize = ({ setWidth, width, height, setHeight }) => {
   const decrementWidth = () => {
     if (width === 1) {
       return;
@@ -61,7 +54,6 @@ const GridSize = ({
           <FaPlus />
         </button>
       </div>
-      <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 };

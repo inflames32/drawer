@@ -1,5 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import DarkMode from "./DarkMode";
 import Auth from "../components/Auth";
 
 import "../assets/CSS/Header.css";
@@ -13,6 +14,8 @@ const Header = ({
   setPasswordIsShow,
   setMenuIsOpen,
   menuIsOpen,
+  darkMode,
+  setDarkMode,
 }) => {
   const handleOpenMenu = () => {
     setMenuIsOpen(!menuIsOpen);
@@ -36,6 +39,7 @@ const Header = ({
         ) : (
           <div className="header_message">Close</div>
         )}
+        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
       </nav>
 
       {/*  <h1 className="header_title">Pixel Art Grid React App </h1> */}

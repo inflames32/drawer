@@ -1,3 +1,126 @@
+@media screen and (max-width: /* 336px */ 570px) {
+  .colorspicker_container {
+    display: flex;
+    width: 720px;
+    max-width: 95%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    margin: auto;
+  }
+  .color {
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .color:hover {
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+  }
+  .black:hover {
+    width: 50px;
+    height: 50px;
+    border: solid 1px white;
+  }
+
+  .blue {
+    background: blue;
+  }
+
+  .red {
+    background: red;
+  }
+  .green {
+    background: green;
+  }
+  .yellow {
+    background: yellow;
+  }
+  .white {
+    background: white;
+  }
+  .black {
+    background: black;
+  }
+
+  .selected_color {
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+  }
+}
+@media screen and (min-width: 571px) {
+  .colorspicker_container {
+    display: flex;
+    width: 570px;
+
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    margin: auto;
+  }
+  .color {
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .color:hover {
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+  }
+  .black:hover {
+    width: 50px;
+    height: 50px;
+    border: solid 1px white;
+  }
+
+  .blue {
+    background: blue;
+  }
+
+  .red {
+    background: red;
+  }
+  .green {
+    background: green;
+  }
+  .yellow {
+    background: yellow;
+  }
+  .white {
+    background: white;
+  }
+  .black {
+    background: black;
+  }
+
+  .selected_color {
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+  }
+}
+/*
+
+
 .colorspicker_container {
   display: flex;
   width: 720px;

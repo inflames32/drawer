@@ -1,3 +1,63 @@
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+  }
+  .header_nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .header_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .header_title {
+    font-family: Tahoma;
+  }
+  .header_message {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .header_btn--close {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 388px) {
+  .header {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header_title {
+    font-family: Tahoma;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_btn--open,
+  .header_btn--close {
+  }
+}
+@media screen and (min-width: 769px) {
+  .header_btn--open,
+  .header_btn--close,
+  .header_message {
+    display: none;
+  }
+}
 /* @media screen and(max-width: 450px) {
   .header {
     position: absolute;

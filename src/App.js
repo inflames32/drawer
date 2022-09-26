@@ -20,24 +20,28 @@ const App = () => {
   const [background, setBackground] = useState("#fff");
   const [selectedColor, setSelectedColor] = useState("");
   const [pixelsColored, setPixelsColored] = useState([]);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
     <div className={darkMode ? "App dark" : "App"}>
-      <Header
+      {/*   <Header
         email={email}
         password={password}
         setEmail={setEmail}
         setPassword={setPassword}
         passwordIsShow={passwordIsShow}
         setPasswordIsShow={setPasswordIsShow}
-      />
+        setMenuIsOpen={setMenuIsOpen}
+        menuIsOpen={menuIsOpen}
+      /> */}
 
-      <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
       <GridSize
         width={width}
         setWidth={setWidth}
         setHeight={setHeight}
         height={height}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
       />
       <div className="container">
         <ColorsPicker

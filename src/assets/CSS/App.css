@@ -1,14 +1,39 @@
-/* @import "~@csstools/normalize.css"; */
-/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
- */
-/* @media screen and (max-width: 320px) {
-  .App {
-    width: 100vw;
-    min-height: 100vh;
-  }
-} */
-
 .App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(124, 160, 201);
+}
+.container {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 337px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 338px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* .App {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,3 +67,4 @@
   width: 60px;
   height: 60px;
 }
+ */

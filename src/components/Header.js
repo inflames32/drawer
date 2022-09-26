@@ -1,6 +1,8 @@
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 import Auth from "../components/Auth";
 
-/* import "../assets/CSS/header.css"; */
+import "../assets/CSS/header.css";
 
 const Header = ({
   email,
@@ -9,10 +11,34 @@ const Header = ({
   setPassword,
   passwordIsShow,
   setPasswordIsShow,
+  setMenuIsOpen,
+  menuIsOpen,
 }) => {
+  const handleOpenMenu = () => {
+    setMenuIsOpen(!menuIsOpen);
+  };
+
   return (
     <div className="header">
-      <h1 className="header_title">Pixel Art Grid React App </h1>
+      <nav className="header_nav">
+        {menuIsOpen ? (
+          <div className="header_btn--open">
+            <GiHamburgerMenu className="header_icon" onClick={handleOpenMenu} />
+          </div>
+        ) : (
+          <div className="header_btn--close">
+            <AiOutlineClose className="header_icon" onClick={handleOpenMenu} />
+          </div>
+        )}
+
+        {menuIsOpen ? (
+          <div className="header_message">Open</div>
+        ) : (
+          <div className="header_message">Close</div>
+        )}
+      </nav>
+
+      {/*  <h1 className="header_title">Pixel Art Grid React App </h1> */}
       {/*    <Auth
         email={email}
         password={password}

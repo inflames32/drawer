@@ -1,7 +1,16 @@
 import { HiOutlinePlus, HiOutlineMinus, HiOutlineXMark } from "react-icons/hi";
+import { FaMinus, FaPlus } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import DarkMode from "./DarkMode";
 import "../assets/CSS/GridSize.css";
-const GridSize = ({ setWidth, width, height, setHeight }) => {
+const GridSize = ({
+  setWidth,
+  width,
+  height,
+  setHeight,
+  darkMode,
+  setDarkMode,
+}) => {
   const decrementWidth = () => {
     if (width === 1) {
       return;
@@ -26,34 +35,33 @@ const GridSize = ({ setWidth, width, height, setHeight }) => {
   return (
     <div className="grid_size_container">
       <div className="grid_size_width">
-        <span className="grid_size_label">Width</span>
+        <span className="grid_size_label">W : </span>
         <button className="grid_size_btn" onClick={decrementHeigth}>
-          <HiOutlineMinus />
+          <FaMinus />
         </button>
         <span className="grid_size_input" value={height} min={1}>
           {height}
         </span>
-
         <button className="grid_size_btn" onClick={incrementHeigth}>
-          <HiOutlinePlus />
+          <FaPlus />
         </button>
       </div>
-
       <span className="x">
         <ImCross />
       </span>
       <div className="grid_size_height">
-        <span className="grid_size_label">Height</span>
+        <span className="grid_size_label">H : </span>
         <button className="grid_size_btn" onClick={decrementWidth}>
-          <HiOutlineMinus />
+          <FaMinus onClick={decrementWidth} />
         </button>
         <span className="grid_size_input" min={1}>
           {width}
         </span>
         <button className="grid_size_btn" onClick={incrementWidth}>
-          <HiOutlinePlus />
+          <FaPlus />
         </button>
       </div>
+      <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 };

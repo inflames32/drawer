@@ -1,4 +1,40 @@
-.grid_size_container {
+@media screen and (max-width: 337px) {
+  .grid_size_container {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .x {
+    margin: 0 20px 0 20px;
+  }
+  .grid_size_input,
+  .grid_size_label {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 338px) {
+  .grid_size_container {
+    display: flex;
+    width: 600px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .x {
+    margin: 0 20px 0 20px;
+    align-items: center;
+  }
+  .grid_size_input,
+  .grid_size_label {
+    font-size: 20px;
+  }
+}
+/* .grid_size_container {
   display: flex;
   max-width: 100%;
   justify-content: center;

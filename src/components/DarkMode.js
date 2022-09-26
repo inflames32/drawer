@@ -1,3 +1,5 @@
+import { BsFillMoonStarsFill, BsFillSunFill, BsSun } from "react-icons/bs";
+
 import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
 import "../assets/CSS/darkMode.css";
 
@@ -9,13 +11,18 @@ const DarkMode = ({ setDarkMode, darkMode }) => {
     <div className="darkMode_container">
       {darkMode ? (
         <span className="darkmode">
-          {/*  <span className="darkmode_tooltiptext">Click Me!</span> */}
-          <HiOutlineLightBulb onClick={handleDarkMode} />
+          <button className="darkmode_btn dark" onClick={handleDarkMode}>
+            <BsFillMoonStarsFill
+              className="darkmode_icon"
+              onClick={handleDarkMode}
+            />
+          </button>
         </span>
       ) : (
         <span className="darkmode">
-          {/*  <span className="darkmode_tooltiptext">Click Me!</span> */}
-          <HiLightBulb onClick={handleDarkMode} />
+          <button className="darkmode_btn light" onClick={handleDarkMode}>
+            <BsSun className="darkmode_icon" />
+          </button>
         </span>
       )}
     </div>

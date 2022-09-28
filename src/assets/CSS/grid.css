@@ -55,47 +55,8 @@
   .grid_pixel:hover {
     width: 50px;
     height: 50px;
-    background: #ffffff;
-    border: solid 0.2px rgb(145, 8, 8);
+    background: rgb(172, 168, 168);
+    border: solid 0.2px rgb(98, 96, 96);
     cursor: cell;
   }
 }
-/* 
-.grid_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-  height: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  cursor: cell;
-}
-.grid {
-  height: 95%;
-  width: 95%;
-  max-height: 1000px;
-}
-.grid_row {
-  display: flex;
-  width: auto;
-
-  height: 50px;
-}
-
-.grid_pixel {
-  width: 50px;
-  height: 50px;
-  background: #ffffff;
-  border: solid 0.2px rgb(98, 96, 96);
-}
-.col:hover {
-  background: rgb(189, 189, 189);
-}
-/* 
-@media screen and (max-width: 320px) {
-  .grid_container {
-    width: 90%;
-  }
-} 
- */

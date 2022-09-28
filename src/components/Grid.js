@@ -25,18 +25,6 @@ const Grid = ({
     numberOfCols.push(i);
   }
 
-  const [widthGrid, setWidthGrid] = useState();
-
-  const pixel_width = window.innerWidth / numberOfCols.length;
-  /* console.log(widthGrid); */
-  console.log(numberOfRows.length);
-  console.log("test", pixel_width);
-  const newtest = window.innerWidth;
-
-  let widthOfGridElement = document.getElementsByClassName("grid");
-
-  console.log("widthOfGridElement.inn", widthOfGridElement.innerWidth);
-
   return (
     <div className="grid_container">
       <div className="grid" style={{ height: window.innerWidth }}>
@@ -45,11 +33,14 @@ const Grid = ({
             className="grid_row"
             key={row}
             name={row}
-            style={{ height: pixel_width }}
+            style={{ height: window.innerWidth / numberOfCols.length }}
           >
             {numberOfCols.map((pixel, idCol) => (
               <div
-                style={{ width: pixel_width, height: pixel_width }}
+                style={{
+                  width: window.innerWidth / numberOfCols.length,
+                  height: window.innerWidth / numberOfCols.length,
+                }}
                 className="grid_pixel"
                 id={idRow.toString() + "-" + idCol.toString()}
                 key={pixel}

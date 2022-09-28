@@ -6,7 +6,6 @@ import colortoJson from "./components/colors.json";
 import Grid from "./components/Grid";
 import ColorsPicker from "./components/ColorsPicker";
 import Header from "./components/Header";
-import DarkMode from "../src/components/DarkMode";
 import GridSize from "./components/GridSize";
 
 const App = () => {
@@ -22,8 +21,13 @@ const App = () => {
   const [pixelsColored, setPixelsColored] = useState([]);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
+  const handleReset = () => {
+    setPixelsColored([]);
+    console.log(pixelsColored);
+  };
   return (
     <div className={darkMode ? "App dark" : "App"}>
+      {/*  <button onClick={handleReset}>Reset</button> */}
       <Header
         email={email}
         password={password}

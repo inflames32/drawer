@@ -31,7 +31,7 @@
 }
 @media screen and (min-width: 337px) {
   .grid_container {
-    width: 100%;
+    max-width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,24 +39,63 @@
     margin-top: 80px;
   }
   .grid {
-    height: 95%;
-    max-width: 90%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
   }
   .grid_row {
     display: flex;
-    width: auto;
-    height: 50px;
+    width: 100%;
   }
 
   .grid_pixel {
-    width: 50px;
-    height: 50px;
     background: #ffffff;
     border: solid 0.2px rgb(98, 96, 96);
   }
   .grid_pixel:hover {
-    background: rgb(98, 96, 96);
-    border: solid 0.2px rgb(98, 96, 96);
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border: solid 0.2px rgb(145, 8, 8);
     cursor: cell;
   }
 }
+/* 
+.grid_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: cell;
+}
+.grid {
+  height: 95%;
+  width: 95%;
+  max-height: 1000px;
+}
+.grid_row {
+  display: flex;
+  width: auto;
+
+  height: 50px;
+}
+
+.grid_pixel {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border: solid 0.2px rgb(98, 96, 96);
+}
+.col:hover {
+  background: rgb(189, 189, 189);
+}
+/* 
+@media screen and (max-width: 320px) {
+  .grid_container {
+    width: 90%;
+  }
+} 
+ */

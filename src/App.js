@@ -8,6 +8,7 @@ import ColorsPicker from "./components/ColorsPicker";
 import Header from "./components/Header";
 import DarkMode from "../src/components/DarkMode";
 import GridSize from "./components/GridSize";
+import Saving from "./components/Saving";
 
 const App = () => {
   const [passwordIsShow, setPasswordIsShow] = useState(false);
@@ -35,6 +36,10 @@ const App = () => {
         menuIsOpen={menuIsOpen}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
+      />
+      <Saving
+        pixelsColored={pixelsColored}
+        setPixelsColored={setPixelsColored}
       />
 
       <GridSize

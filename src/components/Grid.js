@@ -6,21 +6,26 @@ const Grid = ({
   color,
   setColor,
   pixelsColored,
+  setPixelsColored,
   setWidth,
   width,
   height,
   setHeight,
   selectedColor,
-  setPixelsColored,
 }) => {
   const handleColor = (evt) => {
     evt.target.style.background = selectedColor;
     const id = evt.target.getAttribute("id");
+    const pixelColor = evt.target.style.background;
+    console.log(id, pixelColor);
     setColor(selectedColor);
+    /* console.log(newArrayOfPixelsColored); */
+    setPixelsColored([...pixelsColored, { id, selectedColor }]);
+
+    console.log(pixelsColored);
     /*  pixelsColored.push({ id, color }); */
-    console.log(pixelsColored);
-    setPixelsColored([...pixelsColored], { id, selectedColor });
-    console.log(pixelsColored);
+
+    /* setPixelsColored([...pixelsColored], { id, selectedColor }); */
   };
 
   // nombre de lignes
@@ -38,14 +43,10 @@ const Grid = ({
   const [widthGrid, setWidthGrid] = useState();
 
   const test = window.innerWidth / numberOfCols.length;
-  /* console.log(widthGrid); */
-  console.log(numberOfRows.length);
-  console.log("test", test);
+
   const newtest = window.innerWidth;
 
   let widthOfGridElement = document.getElementsByClassName("grid");
-
-  console.log("widthOfGridElement.inn", widthOfGridElement.innerWidth);
 
   return (
     <div className="grid_container">
